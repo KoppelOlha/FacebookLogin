@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class LoginTest {
 
     private WebDriver browser;
-    private static String LOGIN = "";
+    private static final String LOGIN = "";
     private static final String PASSWORD = "";
 
     @BeforeClass
