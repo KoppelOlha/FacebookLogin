@@ -30,11 +30,13 @@ public class LoginTest {
         browser.findElement(By.cssSelector("[type~=email]")).sendKeys(LOGIN);
         browser.findElement(By.cssSelector("#pass")).sendKeys(PASSWORD);
         browser.findElement(By.xpath(".//label[@id=\"loginbutton\"]")).click();
+        browser.findElement(By.cssSelector("[data-testid~=left_nav_section_Интересное]"));
+
     }
 
     @AfterClass
 
-    public void closedBrowser(){
+     public void closedBrowser(){
        browser.quit();
-    }
+     }
 }
