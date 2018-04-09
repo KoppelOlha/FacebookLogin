@@ -27,6 +27,7 @@ public class LoginTest {
 
     public void loginFacebook() {
         browser.get("https://www.facebook.com");
+        browser.findElement(By.cssSelector("[class~=biglink]")).click();
         browser.findElement(By.cssSelector("[type~=email]")).sendKeys(LOGIN);
         browser.findElement(By.cssSelector("#pass")).sendKeys(PASSWORD);
         browser.findElement(By.xpath(".//label[@id=\"loginbutton\"]")).click();
